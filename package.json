@@ -1,4 +1,27 @@
 {
   "name": "react-native-template-pro",
-  "version": "0.0.1"
+  "version": "0.0.2",
+  "author": "Thiago Brezinski",
+  "description": "A React Native template with a nice folder structure, navigation, async and debugging tools.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thiagobrez/react-native-template-pro"
+  },
+  "keywords": [
+    "react",
+    "react-native",
+    "template",
+    "boilerplate",
+    "redux",
+    "redux-saga",
+    "reactotron",
+    "prop-types",
+    "react-navigation",
+    "react-native-vector-icons"
+  ],
+  "homepage": "https://github.com/thiagobrez/react-native-template-pro",
+  "bugs": {
+    "url": "https://github.com/mauricekraus/react-native-template-coffee/issues"
+  },
+  "license": "MIT"
 }
