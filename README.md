@@ -26,7 +26,7 @@ or
 * [Prop Types](https://www.npmjs.com/package/prop-types): typing for component props
 * [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons): huge set of customizable icons
 
-### Webstorm snippets
+### Jetbrains Webstorm snippets
 See [how to create and use](https://blog.jetbrains.com/webstorm/2018/01/using-and-creating-code-snippets/)
 * Stateful component
 ```javascript
