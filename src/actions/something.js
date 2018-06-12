@@ -1,11 +1,9 @@
 import {REQUEST_GET_SOMETHING} from '../util/actionTypes';
 
 /**
- * @author Thiago Brezinski
+ * Redux action template.
  *
- * Modelo de ação a ser disparada.
- *
- * @param param: parâmetro a ser passado junto com a ação
+ * @param param: action payload
  */
 export function getSomething(param) {
 	return {

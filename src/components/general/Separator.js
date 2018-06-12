@@ -3,9 +3,7 @@ import {colors} from '../../styles';
 import {View} from 'react-native';
 
 /**
- * @author Thiago Brezinski
- *
- * Separador de ListItems.
+ * ListItems separator.
  */
 const Separator = () => (
   <View

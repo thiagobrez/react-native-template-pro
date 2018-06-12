@@ -1,7 +1,5 @@
 /**
- * @author Thiago Brezinski
- *
- * Estado inicial do reducer, se ainda não houver nenhum valor deste reducer na store.
+ * General reducer initial state, if this reducer's store is still empty.
  */
 export const INITIAL_STATE = {
 	data: [],
@@ -10,9 +8,7 @@ export const INITIAL_STATE = {
 };
 
 /**
- * @author Thiago Brezinski
- *
- * Estado inicial do reducer de navegação, se ainda não houver nenhum valor dele na store.
+ * Navigation reducer initial state, if this reducer's store is still empty.
  */
 export const NAVIGATION_INITIAL_STATE = {
   data: 'Tab2',

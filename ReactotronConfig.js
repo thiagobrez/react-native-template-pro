@@ -3,9 +3,7 @@ import {reactotronRedux} from 'reactotron-redux';
 import sagaPlugin from 'reactotron-redux-saga'
 
 /**
- * @author Thiago Brezinski
- *
- * Configura o Reactotron.
+ * Reactotron initialization.
  */
 Reactotron
   .configure({name: 'HelloWorld'})
@@ -15,20 +13,16 @@ Reactotron
   .connect();
 
 /**
- * @author Thiago Brezinski
- *
- * Limpa o debugger toda vez que recarrega o app.
+ * Clears debugger on reload.
  */
 Reactotron.clear();
 
 /**
- * @author Thiago Brezinski
- *
- * Funções úteis de log.
+ * Util logging functions.
  */
 console.tron = Reactotron.log;
-console.display = (name, value) => Reactotron.display({
+console.display = (name, value, important = false) => Reactotron.display({
   name,
   value,
-  // important: true,
+  important,
 });

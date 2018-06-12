@@ -1,7 +1,5 @@
 /**
- * @author Thiago Brezinski
- *
- * Modelo de action types.
+ * Action types template.
  */
 export const REQUEST_GET_SOMETHING = 'REQUEST_GET_SOMETHING';
 export const SUCCESS_GET_SOMETHING = 'SUCCESS_GET_SOMETHING';

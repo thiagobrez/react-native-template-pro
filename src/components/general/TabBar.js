@@ -8,9 +8,7 @@ import * as navigationActions from '../../actions/navigation';
 import {View, StyleSheet, TouchableOpacity} from 'react-native';
 
 /**
- * @author Thiago Brezinski
- *
- * Tab bar customizada para ser usada em um TabNavigator.
+ * Custom tab bar to be used in a TabNavigator.
  */
 class TabBar extends Component {
   

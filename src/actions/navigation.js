@@ -1,11 +1,9 @@
 import {SET_CURRENT_ROUTE_NAME} from '../util/actionTypes';
 
 /**
- * @author Thiago Brezinski
+ * Action dispatched when a route changes.
  *
- * Ação ao trocar de rota.
- *
- * @param routeName: nome da nova rota atual
+ * @param routeName: new current route name
  */
 export function setCurrentRouteName(routeName) {
 	return {

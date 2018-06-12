@@ -3,9 +3,7 @@ import navigation from './navigation';
 import something from './something';
 
 /**
- * @author Thiago Brezinski
- *
- * Recebe todos os reducers e combina em um só, para enviar à criação da store.
+ * Combines every reducer to send to store creation.
  */
 export default combineReducers({
 	navigation,

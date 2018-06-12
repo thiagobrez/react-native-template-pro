@@ -13,6 +13,10 @@ React Native template with a nice folder structure, navigation, async and debugg
 
 `yarn add --dev reactotron-react-native reactotron-redux reactotron-redux-saga`
 
+or
+
+`npm install --save-dev reactotron-react-native reactotron-redux reactotron-redux-saga`
+
 ### What's included
 * **Folder structure**
 

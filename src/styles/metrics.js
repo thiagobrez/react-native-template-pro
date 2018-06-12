@@ -1,9 +1,7 @@
 import {Platform} from 'react-native';
 
 /**
- * @author Thiago Brezinski
- *
- * Métricas padronizadas do app.
+ * App default metrics.
  */
 export default {
 	padding: 15,

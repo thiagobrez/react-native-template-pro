@@ -6,20 +6,17 @@ import {HeaderRight} from '../../components';
 import {createStackNavigator} from 'react-navigation';
 
 /**
- * @author Thiago Brezinski
- *
  * Root navigator.
  *
- * Navegação primária: Tabs.
- * Navegação secundária: Stacks.
+ * Primary navigation: Tabs.
+ * Secondary navigation: Stacks.
  */
 export default RootNavigatorTabs = () => {
   
   return createStackNavigator({
     MainTabs: {screen: MainTabs},
     
-    // Telas que sobrepõem as MainTabs
-    
+    //MainTabs overlays
     Overlay1: {screen: Overlay1},
   }, {
     navigationOptions: ({navigation}) => ({

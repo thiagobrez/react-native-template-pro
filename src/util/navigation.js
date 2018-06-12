@@ -3,11 +3,9 @@ import {setCurrentRouteName} from '../actions/navigation';
 import store from '../store';
 
 /**
- * @author Thiago Brezinski
+ * Receives a navigation state and returns current route name.
  *
- * Recebe um estado do navigator e retorna o nome da rota atual.
- *
- * @param navState: estado do navigator
+ * @param navState: navigation state
  */
 export const getCurrentRouteName = navState => {
   if (navState.hasOwnProperty('index')) {
@@ -18,9 +16,7 @@ export const getCurrentRouteName = navState => {
 };
 
 /**
- * @author Thiago Brezinski
- *
- * Reseta o stack de navegação à rota definida em routeName.
+ * Resets stack navigation to routeName.
  */
 export const resetToRoute = routeName => NavigationActions.reset({
   index: 0,

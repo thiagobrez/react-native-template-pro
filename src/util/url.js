@@ -2,11 +2,9 @@
 // import {Linking, Platform} from 'react-native';
 
 /**
- * @author Thiago Brezinski
+ * Opens a WebView and loads some URL. In iOS, opens a SafariView.
  *
- * Abre uma WebView e carrega algum URL. No iOS, abre uma SafariView.
- *
- * @param url: url a ser carregado
+ * @param url: url to be loaded
  */
 // export const openURL = url => {
 // 	if (Platform.OS === 'ios') {

@@ -1,14 +1,10 @@
 /**
- * @author Thiago Brezinski
- *
- * Dados base das requisições ao servidor.
+ * Request general info.
  */
-export const BASE_URL = 'http://192.168.0.175:8080';
+export const BASE_URL = 'http://8.8.8.8:8080';
 export const API = '/api';
 
 /**
- * @author Thiago Brezinski
- *
- * Modelo de rota.
+ * Server route template.
  */
 export const GET_SOMETHING = BASE_URL + API + '/getSomething';

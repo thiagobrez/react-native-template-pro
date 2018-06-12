@@ -1,7 +1,5 @@
 /**
- * @author Thiago Brezinski
- *
- * Cores padronizadas do app.
+ * App default colors.
  */
 export default {
 	primary: '#C0C0C0',

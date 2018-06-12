@@ -4,10 +4,8 @@ import {colors} from '../../styles';
 import {View, TextInput, StyleSheet} from 'react-native';
 
 /**
- * @author Thiago Brezinski
- *
- * Barra de pesquisa customizável. Aceita as props containerStyle e searchBarStyle.
- * Se não forem passados, serão utilizados os estilos padrões.
+ * Custom search bar. Accepts props containerStyle and searchBarStyle, otherwise
+ * default styles are used.
  */
 export default class SearchBar extends Component {
   
@@ -35,7 +33,7 @@ export default class SearchBar extends Component {
       <View style={this._containerStyle}>
         <TextInput
           style={this._searchBarStyle}
-          underlineColorAndroid={'transparent'}
+          underlineColorAndroid={colors.transparent}
           placeholder={placeholder}
           onChangeText={onChangeText}
           value={value}

@@ -5,17 +5,13 @@ import reducers from './reducers';
 import rootSaga from './sagas';
 
 /**
- * @author Thiago Brezinski
- *
- * Configuração do Reactotron.
+ * Reactotron linking for Redux-Saga.
  */
 const sagaMonitor = Reactotron.createSagaMonitor();
 const sagaMiddleware = createSagaMiddleware({sagaMonitor});
 
 /**
- * @author Thiago Brezinski
- *
- * Criação da store do Redux.
+ * Redux store creation.
  */
 const store = Reactotron.createStore(
 	reducers,
@@ -23,9 +19,7 @@ const store = Reactotron.createStore(
 );
 
 /**
- * @author Thiago Brezinski
- *
- * Inicia o listener da saga root do Redux-Saga.
+ * Starts root saga listener.
  */
 sagaMiddleware.run(rootSaga);
 

@@ -8,12 +8,10 @@ import * as navigationActions from '../../actions/navigation';
 import {StyleSheet, TouchableOpacity} from 'react-native';
 
 /**
- * @author Thiago Brezinski
- *
- * Componente para o canto superior direito de StackNavigators. Ao ser pressionado,
- * redireciona para uma rota específica. Se a rota for um overlay, não é renderizado.
+ * StackNavigator header icon component. When pressed, redirects to a specific route. If the route
+ * is an overlay, it isn't rendered.
  */
-class HeaderRight extends Component {
+class HeaderIcon extends Component {
 	
 	state = {
 		icon: 'settings-outline'
@@ -49,7 +47,7 @@ class HeaderRight extends Component {
 	}
 }
 
-HeaderRight.propTypes = {
+HeaderIcon.propTypes = {
   data: PropTypes.string
 };
 
@@ -68,4 +66,4 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => bindActionCreators(navigationActions, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(HeaderRight);
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderIcon);

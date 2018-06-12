@@ -9,9 +9,7 @@ import {
 } from '../screens';
 
 /**
- * @author Thiago Brezinski
- *
- * TabNavigator com 4 tabs e tab bar customizada.
+ * TabNavigator with 4 tabs and custom tab bar.
  */
 export default MainTabs = createTabNavigator({
     Tab1: {screen: Tab1},

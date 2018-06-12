@@ -3,9 +3,7 @@ import {
 } from './endpoints';
 
 /**
- * @author Thiago Brezinski
- *
- * Modelo de requisição ao servidor.
+ * Request template.
  */
 export const getSomething = async param => {
 	console.display('GET_SOMETHING', GET_SOMETHING);

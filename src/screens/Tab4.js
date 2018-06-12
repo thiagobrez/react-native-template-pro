@@ -14,7 +14,7 @@ export default class Tab4 extends Component {
     return (
       <View>
         <Text>Tab4</Text>
-        <Text onPress={() => navigate('Overlay1')}>Abrir Overlay1</Text>
+        <Text onPress={() => navigate('Overlay1')}>Open Overlay1</Text>
       </View>
     );
     

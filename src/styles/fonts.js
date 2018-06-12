@@ -1,7 +1,5 @@
 /**
- * @author Thiago Brezinski
- *
- * Estilos de fonte padronizados do app.
+ * App default font styles.
  */
 export default {
 	biggest: 28,

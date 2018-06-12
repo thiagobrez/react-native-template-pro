@@ -6,14 +6,12 @@ import {
 } from '../util/actionTypes';
 
 /**
- * @author Thiago Brezinski
+ * Reducer template.
  *
- * Modelo de reducer.
+ * Changes store state based on response action type.
  *
- * Altera o estado da store com base no tipo de resposta recebida.
- *
- * @param state: estado atual da propriedade 'something' na store
- * @param action: ação recebida diretamente ou através da saga
+ * @param state: current state of property 'something'
+ * @param action: action dispatched (directly or via saga)
  */
 export default function something(state = INITIAL_STATE, action) {
 	switch (action.type) {

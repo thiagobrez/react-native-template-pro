@@ -7,11 +7,10 @@ import {StatusBar, YellowBox} from 'react-native';
 import store from './src/store';
 
 /**
- * @author Thiago Brezinski
- *
- * Configurações do app.
+ * App configuration.
  */
 const config = {
+	//Selectable from /navigators/root
   rootNavigator: 'RootNavigatorTabs',
   statusBarLightContent: true
 };

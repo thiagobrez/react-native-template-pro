@@ -2,12 +2,10 @@ import {SET_CURRENT_ROUTE_NAME} from '../util/actionTypes';
 import {NAVIGATION_INITIAL_STATE} from '../util/reducer';
 
 /**
- * @author Thiago Brezinski
+ * Changes current navigator route at the store.
  *
- * Altera a rota atual do navigator na store.
- *
- * @param state: estado atual da propriedade 'navigation' na store
- * @param action: ação recebida no onNavigationStateChange do AppNavigator
+ * @param state: current state of property 'navigation'
+ * @param action: action dispatched on 'onNavigationStateChange' of AppNavigator
  */
 export default function navigation(state = NAVIGATION_INITIAL_STATE, action) {
 	switch (action.type) {

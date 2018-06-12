@@ -4,15 +4,12 @@ import {colors} from '../../styles';
 import {TouchableOpacity, Text, StyleSheet} from 'react-native';
 
 /**
- * @author Thiago Brezinski
+ * Customizable button component.
  *
- * Componente de botão customizável.
- *
- * @param customStyle: estilo customizado para ser sobreescrito
- * @param type: tipo do botão, para ter estilo mesclado com o estilo padrão.
- * Ex: 'facebook'
- * @param onPress: função a ser executada ao pressionar o botão
- * @param children: componentes filhos do botão
+ * @param customStyle: overrides default styles
+ * @param type: button type. merges with default styles. e.g.: 'facebook'
+ * @param onPress: function to be executed at button press
+ * @param children: button child components
  */
 const Button = ({customStyle, type, onPress, children}) => {
 	
@@ -53,6 +50,8 @@ const styles = StyleSheet.create({
 		textAlign: 'center',
 		color: colors.white,
 	},
+ 
+	//Button type styles
 	facebook: {
 		backgroundColor: colors.facebook,
 		borderColor: colors.facebook

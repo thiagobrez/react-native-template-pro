@@ -1,4 +1,4 @@
-import HeaderRight from './general/HeaderRight';
+import HeaderRight from './general/HeaderIcon';
 import TabBar from './general/TabBar';
 import Button from './general/Button';
 import SearchBar from './general/SearchBar';

@@ -9,14 +9,12 @@ import {
 } from './rest/requests';
 
 /**
- * @author Thiago Brezinski
+ * Saga template.
  *
- * Modelo de saga.
+ * Receives an action, calls the request passing it's parameters and, at the function
+ * return, sends the result to the reducer.
  *
- * Recebe uma ação, chama uma requisição passando seus parâmetros,
- * e, no retorno da requisição, devolve o resultado ao reducer.
- *
- * @param action: ação despachada
+ * @param action: dispatched action
  */
 function* requestGetSomething(action) {
 	
@@ -33,9 +31,7 @@ function* requestGetSomething(action) {
 }
 
 /**
- * @author Thiago Brezinski
- *
- * Vincula ações às suas sagas.
+ * Links actions to sagas.
  */
 export default function* root() {
 	yield [

@@ -6,9 +6,7 @@ const rootNavigators = {
 };
 
 /**
- * @author Thiago Brezinski
- *
- * Cria o Root Navigator escolhido para ser usado pelo app.
+ * Creates RootNavigator chosen at App.js config.
  */
 const createRootNavigator = rootNavigator => {
 	return rootNavigators[rootNavigator]();

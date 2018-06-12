@@ -13,7 +13,6 @@ export default class Overlay1 extends Component {
     return (
       <View>
         <Text>Overlay1</Text>
-      
       </View>
     );
     
