@@ -12,17 +12,17 @@ import {TouchableOpacity, Text, StyleSheet} from 'react-native';
  * @param children: button child components
  */
 const Button = ({customStyle, type, onPress, children}) => {
-	
-	const buttonStyles = customStyle ? customStyle : [styles.button, styles[type]];
-	
-	return (
-		<TouchableOpacity onPress={onPress}
-											style={buttonStyles}>
-			<Text style={styles.text}>
-				{children}
-			</Text>
-		</TouchableOpacity>
-	);
+  
+  const buttonStyles = customStyle ? customStyle : [styles.button, styles[type]];
+  
+  return (
+    <TouchableOpacity onPress={onPress}
+                      style={buttonStyles}>
+      <Text style={styles.text}>
+        {children}
+      </Text>
+    </TouchableOpacity>
+  );
 };
 
 Button.propTypes = {
@@ -35,27 +35,28 @@ Button.propTypes = {
 };
 
 const styles = StyleSheet.create({
-	button: {
-		justifyContent: 'space-around',
-		minWidth: 100,
-		height: 40,
-		borderRadius: 5,
-		margin: 10,
-		borderWidth: 1,
-		borderColor: colors.primary,
-		backgroundColor: colors.primary
-	},
-	text: {
-		fontSize: 20,
-		textAlign: 'center',
-		color: colors.white,
-	},
- 
-	//Button type styles
-	facebook: {
-		backgroundColor: colors.facebook,
-		borderColor: colors.facebook
-	},
+  button: {
+    justifyContent: 'space-around',
+    minWidth: 100,
+    height: 40,
+    borderRadius: 5,
+    margin: 10,
+    borderWidth: 1,
+    borderColor: colors.primary,
+    backgroundColor: colors.primary
+  },
+  text: {
+    marginHorizontal: 5,
+    fontSize: 20,
+    textAlign: 'center',
+    color: colors.white,
+  },
+  
+  //Button type styles
+  facebook: {
+    backgroundColor: colors.facebook,
+    borderColor: colors.facebook
+  },
 });
 
 export default Button;

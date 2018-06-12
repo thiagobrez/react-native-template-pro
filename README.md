@@ -112,7 +112,7 @@ export default $ComponentName$;
 ```
 
 ### Contributing
-This is an initial version, feel free to submit a PR!
+This is an initial release, feel free to submit a PR!
 
 ### License
 

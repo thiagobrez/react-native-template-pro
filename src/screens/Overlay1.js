@@ -11,8 +11,10 @@ export default class Overlay1 extends Component {
   render() {
     
     return (
-      <View>
-        <Text>Overlay1</Text>
+      <View style={styles.container}>
+        <Text>
+          Overlay1
+        </Text>
       </View>
     );
     
@@ -22,4 +24,10 @@ export default class Overlay1 extends Component {
 
 Overlay1.propTypes = {};
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  }
+});

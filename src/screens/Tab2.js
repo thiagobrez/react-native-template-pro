@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import {fonts} from '../styles';
 import {
   View,
   Text,
@@ -12,8 +13,12 @@ export default class Tab2 extends Component {
     
     return (
       <View style={styles.container}>
-          <Text>Welcome to react-native-template-pro</Text>
-          <Text>HelloWorld</Text>
+        <Text style={styles.welcome}>
+          Welcome to react-native-template-pro
+        </Text>
+        <Text style={styles.appName}>
+          MyMillionDollarApp
+        </Text>
       </View>
     );
     
@@ -28,5 +33,13 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  welcome: {
+    fontSize: fonts.bigger,
+    fontWeight: fonts.thinnest
+  },
+  appName: {
+    fontSize: fonts.regular,
+    fontWeight: fonts.thinnest
   }
 });
