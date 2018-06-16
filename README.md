@@ -113,9 +113,9 @@ export default $ComponentName$;
 
 ### Roadmap
 
-[ ] Integrate mobile database
+- [ ] Integrate mobile database
 
-[ ] Add more reusable components
+- [ ] Add more reusable components
 
 ### Contributing
 This is an initial release, feel free to submit a PR!
