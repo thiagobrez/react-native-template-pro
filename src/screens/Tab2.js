@@ -17,7 +17,7 @@ export default class Tab2 extends Component {
           Welcome to react-native-template-pro
         </Text>
         <Text style={styles.appName}>
-          MyMillionDollarApp
+          HelloWorld
         </Text>
       </View>
     );

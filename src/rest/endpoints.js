@@ -1,10 +1,14 @@
 /**
  * Request general info.
  */
-export const BASE_URL = 'http://8.8.8.8:8080';
-export const API = '/api';
+export const
+  PROTOCOL = 'http',
+  IP = '8.8.8.8',
+  PORT = '8080',
+  API = 'api',
+  BASE_URL = `${PROTOCOL}://${IP}:${PORT}/${API}`;
 
 /**
  * Server route template.
  */
-export const GET_SOMETHING = BASE_URL + API + '/getSomething';
+export const GET_SOMETHING = BASE_URL + '/getSomething';
