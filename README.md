@@ -113,12 +113,12 @@ export default $ComponentName$;
 
 ### Roadmap
 
-- [ ] Integrate mobile database
-
+- [x] Integrate mobile database
+- [ ] Fully integrate react-navigation to redux
 - [ ] Add more reusable components
 
 ### Contributing
-This is an initial release, feel free to submit a PR!
+This is an initial release, feel free to submit your issues or PRs!
 
 ### License
 
