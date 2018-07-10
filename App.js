@@ -46,7 +46,7 @@ export default class App extends Component {
   logDatabase = () => {
     console.display(
       'Database',
-      this.state.realm.objects('Dog'),
+      this.state.realm.objects('Something'),
       true
     )
   };

@@ -2,7 +2,7 @@
   "name": "react-native-template-pro",
   "version": "1.1.0",
   "author": "Thiago Brezinski",
-  "description": "A React Native template with a nice folder structure, navigation, async and debugging tools.",
+  "description": "A React Native template with a nice folder structure, navigation, database and async and debugging tools support",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thiagobrez/react-native-template-pro"

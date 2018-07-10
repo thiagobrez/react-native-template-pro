@@ -1,12 +1,19 @@
 # react-native-template-pro
-React Native template with a nice folder structure, navigation, async and debugging tools.
+React Native template with a nice folder structure, navigation, database and async and debugging tools support.
 
 ### Requirements
-* React Native [properly installed](https://facebook.github.io/react-native/docs/getting-started.html) (building projects with native code).
-* Reactotron [properly installed](https://github.com/infinitered/reactotron/blob/master/docs/installing.md).
+
+---
+
+* React Native [properly installed](https://facebook.github.io/react-native/docs/getting-started.html) (building projects with native code)
+* Reactotron [properly installed](https://github.com/infinitered/reactotron/blob/master/docs/installing.md)
 * Knowledge on [Redux](https://redux.js.org/) and [Redux-Saga](https://github.com/redux-saga/redux-saga)
+* Knowledge on [Realm](https://realm.io/docs/javascript/latest) database
 
 ### Installation
+
+---
+
 `react-native init MyMillionDollarApp --template pro`
 
 `cd MyMillionDollarApp`
@@ -18,15 +25,22 @@ or
 `npm install --save-dev reactotron-react-native reactotron-redux reactotron-redux-saga`
 
 ### What's included
+
+---
+
 * **Folder structure**
 * [Reactotron](https://github.com/infinitered/reactotron): debugging
 * [Redux](https://redux.js.org/): state management
 * [Redux Saga](https://github.com/redux-saga/redux-saga): async calls
 * [React Navigation](https://reactnavigation.org/): routing and navigation
+* [Realm](https://realm.io/docs/javascript/latest): mobile database
 * [Prop Types](https://www.npmjs.com/package/prop-types): typing for component props
 * [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons): huge set of customizable icons
 
 ### Jetbrains Webstorm snippets
+
+---
+
 See [how to create and use](https://blog.jetbrains.com/webstorm/2018/01/using-and-creating-code-snippets/)
 * Stateful component
 ```javascript
@@ -113,13 +127,21 @@ export default $ComponentName$;
 
 ### Roadmap
 
+---
+
 - [x] Integrate mobile database
+- [ ] Build a generic API over the database
 - [ ] Fully integrate react-navigation to redux
 - [ ] Add more reusable components
 
 ### Contributing
-This is an initial release, feel free to submit your issues or PRs!
+
+---
+
+This is an initial release, feel free to submit your issues or PR's!
 
 ### License
+
+---
 
 MIT
