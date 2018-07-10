@@ -59,11 +59,13 @@ export default class App extends Component {
    * Logs 'Something' database objects to Reactotron
    */
   logDatabase = () => {
-    console.display(
-      'Database',
-      this.state.realm.objects('Something'),
-      true
-    )
+    if(!this.state.realm.empty) {
+      console.display(
+        'Database',
+        this.state.realm.objects('Something'),
+        true
+      )
+    }
   };
   
   render() {
