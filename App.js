@@ -36,13 +36,18 @@ export default class App extends Component {
 	}
   
   componentWillMount() {
+		//Starts listening to database changes
     this.state.realm.addListener('change', this.logDatabase)
   }
   
   componentWillUnmount() {
+    //Stops listening to database changes
     this.state.realm.removeListener('change', this.logDatabase)
   }
   
+  /**
+   * Logs 'Something' database objects to Reactotron
+   */
   logDatabase = () => {
     console.display(
       'Database',

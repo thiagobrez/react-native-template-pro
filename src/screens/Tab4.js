@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Button} from '../components';
+import {fonts} from '../styles';
 import {
   View,
   Text,
@@ -15,7 +16,7 @@ export default class Tab4 extends Component {
     
     return (
       <View style={styles.container}>
-        <Text>Tab4</Text>
+        <Text style={styles.text}>Tab4</Text>
         <Button onPress={() => navigate('Overlay1')}>
           Open Overlay1
         </Button>
@@ -33,5 +34,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  text: {
+    fontSize: fonts.regular,
+    fontWeight: fonts.thinnest
   }
 });

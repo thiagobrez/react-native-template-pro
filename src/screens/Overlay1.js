@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import {fonts} from '../styles';
 import {
   View,
   Text,
@@ -12,7 +13,7 @@ export default class Overlay1 extends Component {
     
     return (
       <View style={styles.container}>
-        <Text>
+        <Text style={styles.text}>
           Overlay1
         </Text>
       </View>
@@ -29,5 +30,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  text: {
+    fontSize: fonts.regular,
+    fontWeight: fonts.thinnest
   }
 });

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import {fonts} from '../styles';
 import {
   View,
   Text,
@@ -12,7 +13,7 @@ export default class Tab1 extends Component {
     
     return (
       <View style={styles.container}>
-        <Text>Tab1</Text>
+        <Text style={styles.text}>Tab1</Text>
       </View>
     );
     
@@ -27,5 +28,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  text: {
+    fontSize: fonts.regular,
+    fontWeight: fonts.thinnest
   }
 });

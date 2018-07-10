@@ -2,8 +2,8 @@
  * App default colors.
  */
 export default {
-	primary: '#C0C0C0',
-	secondary: '#FFF',
+  primary: '#24292E',
+  secondary: '#C0C0C0',
 	
 	darker: '#111',
 	dark: '#333',

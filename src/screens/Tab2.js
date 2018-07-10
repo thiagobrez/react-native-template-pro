@@ -16,7 +16,7 @@ export default class Tab2 extends Component {
         <Text style={styles.welcome}>
           Welcome to react-native-template-pro
         </Text>
-        <Text style={styles.appName}>
+        <Text style={styles.text}>
           HelloWorld
         </Text>
       </View>
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     fontSize: fonts.bigger,
     fontWeight: fonts.thinnest
   },
-  appName: {
+  text: {
     fontSize: fonts.regular,
     fontWeight: fonts.thinnest
   }

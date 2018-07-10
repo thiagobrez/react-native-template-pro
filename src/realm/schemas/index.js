@@ -1,4 +1,4 @@
-import SomethingSchema from './SomethingSchema';
+import {SomethingSchema} from './SomethingSchema';
 
 export {
   SomethingSchema

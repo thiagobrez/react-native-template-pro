@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Realm from 'realm';
 import {SomethingSchema} from '../realm/schemas';
+import {fonts} from '../styles';
 import {Button} from '../components';
 import {
   View,
@@ -12,7 +13,7 @@ import {
 export default class Tab3 extends Component {
   
   state = {
-    realm: null
+    realm: new Realm()
   };
   
   /**
@@ -39,8 +40,8 @@ export default class Tab3 extends Component {
     
     return (
       <View style={styles.container}>
-        <Text>Tab3</Text>
-        <Text>{somethings}</Text>
+        <Text style={styles.text}>Tab3</Text>
+        <Text style={styles.text}>{somethings}</Text>
         <Button onPress={this.createSomething}>
           Create Something
         </Button>
@@ -58,5 +59,9 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
+  },
+  text: {
+    fontSize: fonts.regular,
+    fontWeight: fonts.thinnest
   }
 });

@@ -1,4 +1,8 @@
 # react-native-template-pro
+
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?)](https://github.com/thiagobrez/react-native-template-pro/graphs/commit-activity)
+[![GitHub license](https://img.shields.io/github/license/thiagobrez/react-native-template-pro.svg)](https://github.com/thiagobrez/react-native-template-pro/blob/master/LICENSE)
+
 React Native template with a nice folder structure, navigation, database and async and debugging tools support.
 
 ### Requirements
@@ -130,9 +134,14 @@ export default $ComponentName$;
 ---
 
 - [x] Integrate mobile database
-- [ ] Build a generic API over the database
 - [ ] Fully integrate react-navigation to redux
 - [ ] Add more reusable components
+
+### Known issues
+
+---
+
+* [Unknown named module: 'NativeModules'](https://github.com/infinitered/reactotron/issues/724) - RN 0.56
 
 ### Contributing
 
@@ -144,4 +153,4 @@ This is an initial release, feel free to submit your issues or PR's!
 
 ---
 
-MIT
+[MIT](https://github.com/thiagobrez/react-native-template-pro/blob/master/LICENSE)
