@@ -11,32 +11,42 @@ import store from './src/store';
  * App configuration.
  */
 const config = {
-	//Selectable from /navigators/root
+  //Selectable from /navigators/root
   rootNavigator: 'RootNavigatorTabs',
-  statusBarLightContent: true
+  statusBarLightContent: true,
+  eraseDB: true,
 };
 
 const AppNavigator = createRootNavigator(config.rootNavigator);
 
 export default class App extends Component {
-	
-	constructor(props) {
-		super(props);
-		
-		StatusBar.setBarStyle('light-content', config.statusBarLightContent);
-		YellowBox.ignoreWarnings([
-			'Warning: isMounted(...) is deprecated',
-			'createTabNavigator is deprecated',
-		]);
-		
-		this.state = {
-		  realm: new Realm()
-    }
-		
-	}
+  
+  constructor(props) {
+    super(props);
+    
+    StatusBar.setBarStyle('light-content', config.statusBarLightContent);
+    YellowBox.ignoreWarnings([
+      'Warning: isMounted(...) is deprecated',
+      'createTabNavigator is deprecated',
+    ]);
+    
+    this.state = {
+      realm: new Realm()
+    };
+    
+  }
   
   componentWillMount() {
-		//Starts listening to database changes
+    //Erases database
+    if(config.eraseDB) {
+      try {
+        this.state.realm.write(() => this.state.realm.deleteAll());
+      } catch (e) {
+        console.display('Database write error');
+      }
+    }
+    
+    //Starts listening to database changes
     this.state.realm.addListener('change', this.logDatabase)
   }
   
@@ -56,11 +66,11 @@ export default class App extends Component {
     )
   };
   
-	render() {
-		return (
-			<Provider store={store}>
-				<AppNavigator onNavigationStateChange={(prevState, newState) => getCurrentRouteName(newState)}/>
-			</Provider>
-		);
-	}
+  render() {
+    return (
+      <Provider store={store}>
+        <AppNavigator onNavigationStateChange={(prevState, newState) => getCurrentRouteName(newState)}/>
+      </Provider>
+    );
+  }
 }

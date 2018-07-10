@@ -34,7 +34,7 @@ export default class Tab3 extends Component {
   
   render() {
     
-    const somethings = this.state.realm ?
+    const somethings = !this.state.realm.empty ?
       `Number of Somethings in the database: ${this.state.realm.objects('Something').length}` :
       'Database is empty :/';
     
