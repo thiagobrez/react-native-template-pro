@@ -24,11 +24,7 @@ A React Native template with a nice folder structure, navigation, database, asyn
 
 `cd MyMillionDollarApp`
 
-`yarn add --dev reactotron-react-native reactotron-redux reactotron-redux-saga`
-
-or
-
-`npm install --save-dev reactotron-react-native reactotron-redux reactotron-redux-saga`
+`react-native run-ios` or `react-native run-android` 
 
 ### What's included
 
@@ -144,7 +140,6 @@ export default $ComponentName$;
 ---
 
 * [Unknown named module: 'NativeModules'](https://github.com/infinitered/reactotron/issues/724) - **RN 0.56**
-* As React Native templates currently do not support dev dependencies, in "Installation" section I ask you to install it manually via yarn or npm. Due to this, latest version of reactotron packages are always installed and can cause problems if you are using older Reactotron app, for example.
 
 ### Contributing
 
