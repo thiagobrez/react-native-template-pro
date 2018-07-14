@@ -3,6 +3,8 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?)](https://github.com/thiagobrez/react-native-template-pro/graphs/commit-activity)
 [![GitHub license](https://img.shields.io/github/license/thiagobrez/react-native-template-pro.svg)](https://github.com/thiagobrez/react-native-template-pro/blob/master/LICENSE)
 
+![Usage demo](https://github.com/thiagobrez/react-native-template-pro/blob/master/demo.gif)
+
 A React Native template with a nice folder structure, navigation, database, async and debugging tools support.
 
 ### Requirements
