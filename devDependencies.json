@@ -1,0 +1,5 @@
+{
+  "reactotron-react-native": "^2.0.0",
+  "reactotron-redux": "^2.0.0",
+  "reactotron-redux-saga": "^2.0.0"
+}
