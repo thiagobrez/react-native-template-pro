@@ -7,7 +7,7 @@
 
 A React Native template with a nice folder structure, navigation, database, async and debugging tools support.
 
-### Requirements
+### :bookmark_tabs: Requirements
 
 ---
 
@@ -16,7 +16,7 @@ A React Native template with a nice folder structure, navigation, database, asyn
 * Knowledge on [Redux](https://redux.js.org/) and [Redux-Saga](https://github.com/redux-saga/redux-saga)
 * Knowledge on [Realm](https://realm.io/docs/javascript/latest) database
 
-### Installation
+### :arrow_forward: Installation
 
 ---
 
@@ -26,7 +26,7 @@ A React Native template with a nice folder structure, navigation, database, asyn
 
 `react-native run-ios` or `react-native run-android` 
 
-### What's included
+### :package: What's included
 
 ---
 
@@ -39,7 +39,7 @@ A React Native template with a nice folder structure, navigation, database, asyn
 * [Prop Types](https://www.npmjs.com/package/prop-types): typing for component props
 * [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons): huge set of customizable icons
 
-### Jetbrains Webstorm snippets
+### :computer: Jetbrains Webstorm snippets
 
 ---
 
@@ -127,7 +127,7 @@ $ComponentName$.propTypes = {};
 export default $ComponentName$;
 ```
 
-### Roadmap
+### :pushpin: Roadmap
 
 ---
 
@@ -135,19 +135,19 @@ export default $ComponentName$;
 - [ ] Fully integrate react-navigation to redux
 - [ ] Add more reusable components
 
-### Known issues
+### :warning: Known issues
 
 ---
 
 * [Unknown named module: 'NativeModules'](https://github.com/infinitered/reactotron/issues/724) - **RN 0.56**
 
-### Contributing
+### :pencil2: Contributing
 
 ---
 
 This is an initial release, feel free to submit your issues or PR's!
 
-### License
+### :clipboard: License
 
 ---
 
