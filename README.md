@@ -3,7 +3,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg?)](https://github.com/thiagobrez/react-native-template-pro/graphs/commit-activity)
 [![GitHub license](https://img.shields.io/github/license/thiagobrez/react-native-template-pro.svg)](https://github.com/thiagobrez/react-native-template-pro/blob/master/LICENSE)
 
-React Native template with a nice folder structure, navigation, database and async and debugging tools support.
+A React Native template with a nice folder structure, navigation, database, async and debugging tools support.
 
 ### Requirements
 
@@ -141,7 +141,8 @@ export default $ComponentName$;
 
 ---
 
-* [Unknown named module: 'NativeModules'](https://github.com/infinitered/reactotron/issues/724) - RN 0.56
+* [Unknown named module: 'NativeModules'](https://github.com/infinitered/reactotron/issues/724) - **RN 0.56**
+* As React Native templates currently do not support dev dependencies, in "Installation" section I ask you to install it manually via yarn or npm. Due to this, latest version of reactotron packages are always installed and can cause problems if you are using older Reactotron app, for example.
 
 ### Contributing
 
