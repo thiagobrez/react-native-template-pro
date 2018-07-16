@@ -2,7 +2,7 @@ import React from 'react';
 import {colors} from '../../styles';
 import {MainTabs} from '../index';
 import {Overlay1} from '../../screens';
-import {HeaderRight} from '../../components';
+import {HeaderIcon} from '../../components';
 import {createStackNavigator} from 'react-navigation';
 
 /**
@@ -29,7 +29,7 @@ export default RootNavigatorTabs = () => {
       },
       headerBackTitle: null,
       headerTintColor: colors.secondary,
-      headerRight: <HeaderRight navigation={navigation}/>
+      headerRight: <HeaderIcon navigation={navigation}/>
     })
   })
   
