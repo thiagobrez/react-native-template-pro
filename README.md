@@ -38,6 +38,8 @@ A React Native template with a nice folder structure, navigation, database, asyn
 * [Realm](https://realm.io/docs/javascript/latest): mobile database
 * [Prop Types](https://www.npmjs.com/package/prop-types): typing for component props
 * [React Native Vector Icons](https://github.com/oblador/react-native-vector-icons): huge set of customizable icons
+* [React Native Linear Gradient](https://github.com/react-native-community/react-native-linear-gradient): gradient styles
+* [Formik](https://github.com/jaredpalmer/formik) & [Yup](https://github.com/jquense/yup): easy form handling
 
 ### :computer: Jetbrains Webstorm snippets
 

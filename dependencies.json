@@ -1,4 +1,5 @@
 {
+  "react-native-linear-gradient": "^2.4.0",
   "react-native-vector-icons": "^4.5.0",
   "react-navigation": "^2.0.4",
   "react-redux": "^5.0.7",
