@@ -152,13 +152,12 @@ export default withFormik({
     setSubmitting(true);
     
     register(values)
-      .then(({success, data}) => {
+      .then(ret => {
+        
+        // Add validation
+        
         setSubmitting(false);
-        if(success) {
-          props.screenProps.navigation.navigate('SignedIn');
-        } else {
-          setErrors({message: data})
-        }
+        props.screenProps.navigation.navigate('SignedIn');
       })
       .catch(err => {
         setSubmitting(false);

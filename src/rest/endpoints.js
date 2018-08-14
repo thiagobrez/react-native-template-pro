@@ -11,4 +11,7 @@ export const
 /**
  * Server route template.
  */
-export const GET_SOMETHING = BASE_URL + '/getSomething';
+export const
+  GET_SOMETHING = BASE_URL + '/getSomething',
+  CREATE_USER = BASE_URL + '/open/user/create',
+  LOGIN = BASE_URL + '/login';

@@ -119,13 +119,12 @@ export default withFormik({
   handleSubmit: (values, {props, setSubmitting, setErrors}) => {
     setSubmitting(true);
     login(values)
-      .then(allowed => {
+      .then(ret => {
+        
+        // Add validation
+        
         setSubmitting(false);
-        if(allowed) {
-          props.screenProps.navigation.navigate('SignedIn');
-        } else {
-          setErrors({message: 'E-mail / usuário ou senha inválidos'})
-        }
+        props.screenProps.navigation.navigate('SignedIn');
       })
       .catch(err => {
         setSubmitting(false);
