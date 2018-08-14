@@ -29,7 +29,7 @@ export default class SignedOut extends Component {
                           colors={colors.regularGradient}>
             <View style={styles.titleContainer}>
               <Text style={styles.title}>
-                EROE
+                HelloWorld
               </Text>
             </View>
             <View style={styles.mainContainer}>
@@ -40,7 +40,7 @@ export default class SignedOut extends Component {
                 <View style={styles.divider}/>
                 <View style={styles.dividerTextWrapper}>
                   <Text style={styles.dividerText}>
-                    ou
+                    or
                   </Text>
                 </View>
                 <View style={styles.divider}/>

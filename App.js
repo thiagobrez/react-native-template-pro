@@ -12,7 +12,7 @@ import store from './src/store';
  */
 const config = {
   //Selectable from /navigators/root
-  rootNavigator: 'RootNavigatorSignedIn',
+  rootNavigator: 'RootNavigatorTabs',
   
   statusBarLightContent: false,
   eraseStorage: true,

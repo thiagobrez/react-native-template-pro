@@ -1,6 +1,6 @@
 import React from 'react';
 import {colors} from '../../styles';
-import {MainTabs} from '../index';
+import {NavigatorMainTabs} from '../index';
 import {Overlay1} from '../../screens';
 import {HeaderIcon} from '../../components';
 import {createStackNavigator} from 'react-navigation';
@@ -14,7 +14,7 @@ import {createStackNavigator} from 'react-navigation';
 export default RootNavigatorTabs = () => {
   
   return createStackNavigator({
-    MainTabs: {screen: MainTabs},
+    MainTabs: {screen: NavigatorMainTabs},
     
     //MainTabs overlays
     Overlay1: {screen: Overlay1},

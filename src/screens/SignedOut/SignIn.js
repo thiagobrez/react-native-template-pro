@@ -45,7 +45,7 @@ class SignIn extends Component {
                   color={colors.light}/>
           </View>
           <TextInput style={styles.loginInput}
-                     placeholder='Usuário / e-mail'
+                     placeholder='Email'
                      textContentType='emailAddress'
                      keyboardType='email-address'
                      placeholderTextColor={colors.light}
@@ -76,7 +76,7 @@ class SignIn extends Component {
                   color={colors.light}/>
           </View>
           <TextInput style={styles.loginInput}
-                     placeholder='Senha'
+                     placeholder='Password'
                      textContentType='password'
                      placeholderTextColor={colors.light}
                      clearButtonMode='while-editing'
@@ -97,7 +97,7 @@ class SignIn extends Component {
           }
         </View>
         <View style={styles.signInButtonWrapper}>
-          <Button text='Entrar'
+          <Button text='Sign In'
                   textColor={colors.dark}
                   textWeight={fonts.boldest}
                   color={colors.lighter}

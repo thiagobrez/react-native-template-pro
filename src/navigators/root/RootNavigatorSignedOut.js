@@ -1,6 +1,6 @@
 import React from 'react';
 import {createStackNavigator} from 'react-navigation';
-import RootNavigatorSignedIn from './RootNavigatorSignedIn';
+import RootNavigatorTabs from './RootNavigatorTabs';
 import {SignedOut} from '../../screens';
 
 /**
@@ -12,7 +12,7 @@ export default RootNavigatorSignedOut = () => {
   
   return createStackNavigator({
     SignedOut: {screen: SignedOut},
-    SignedIn: {screen: RootNavigatorSignedIn()},
+    SignedIn: {screen: RootNavigatorTabs()},
   }, {
     mode: 'modal',
     headerMode: 'none',

@@ -45,7 +45,7 @@ class SignUp extends Component {
                   color={colors.light}/>
           </View>
           <TextInput style={styles.loginInput}
-                     placeholder='E-mail'
+                     placeholder='Email'
                      textContentType='emailAddress'
                      keyboardType='email-address'
                      placeholderTextColor={colors.light}
@@ -76,7 +76,7 @@ class SignUp extends Component {
                   color={colors.light}/>
           </View>
           <TextInput style={styles.loginInput}
-                     placeholder='Senha'
+                     placeholder='Password'
                      textContentType='password'
                      placeholderTextColor={colors.light}
                      clearButtonMode='while-editing'
@@ -107,7 +107,7 @@ class SignUp extends Component {
                   color={colors.light}/>
           </View>
           <TextInput style={styles.loginInput}
-                     placeholder='Confirmação de senha'
+                     placeholder='Password confirmation'
                      textContentType='password'
                      placeholderTextColor={colors.light}
                      clearButtonMode='while-editing'
@@ -129,7 +129,7 @@ class SignUp extends Component {
           }
         </View>
         <View style={styles.signInButtonWrapper}>
-          <Button text='Cadastrar'
+          <Button text='Sign Up'
                   textColor={colors.dark}
                   textWeight={fonts.boldest}
                   color={colors.lighter}
