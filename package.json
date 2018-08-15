@@ -1,6 +1,6 @@
 {
   "name": "react-native-template-pro",
-  "version": "1.3.4",
+  "version": "1.3.5",
   "author": "Thiago Brezinski",
   "description": "A React Native template with a nice folder structure, navigation, database, async and debugging tools support",
   "repository": {

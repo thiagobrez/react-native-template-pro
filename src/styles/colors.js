@@ -30,8 +30,8 @@ export default {
     'rgba(44, 86, 40, 0.5)'
   ],
   regularGradient: [
-    'rgba(0, 0, 0, 0.5)',
-    'rgba(50, 50, 50, 0.5)'
+    'rgba(0, 0, 0, 0.3)',
+    'rgba(50, 50, 50, 0.3)'
   ],
   whiteGradient: [
     'rgba(255, 255, 255, 0.8)',

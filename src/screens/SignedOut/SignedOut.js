@@ -20,7 +20,7 @@ export default class SignedOut extends Component {
     
     return (
       <View style={styles.container}>
-        <ImageBackground source={{uri: 'https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=35840c5a386390076c95d47b745ae459&auto=format&fit=crop&w=1650&q=80'}}
+        <ImageBackground source={{uri: 'https://wallpapersmug.com/download/1080x1920/ec1b41/mojave-desert-dune.jpg'}}
                          blurRadius={5}
                          style={styles.container}>
           <LinearGradient style={styles.container}
