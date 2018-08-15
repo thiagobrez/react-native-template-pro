@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Realm from 'realm';
 import {SomethingSchema} from '../realm/schemas';
-import {fonts} from '../styles';
+import {colors, fonts} from '../styles';
 import {Button} from '../components';
 import {
   View,
@@ -40,11 +40,20 @@ export default class Tab3 extends Component {
     
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Tab3</Text>
-        <Text style={styles.text}>{somethings}</Text>
-        <Button onPress={this.createSomething}>
-          Create Something
-        </Button>
+        <View style={styles.contentWrapper}>
+          <View style={styles.textWrapper}>
+            <Text style={styles.text}>
+              {somethings}
+            </Text>
+          </View>
+          <View style={styles.buttonWrapper}>
+            <Button text='Create Something'
+                    textColor={colors.secondary}
+                    textWeight={fonts.boldest}
+                    color={colors.primary}
+                    onPress={this.createSomething}/>
+          </View>
+        </View>
       </View>
     );
     
@@ -60,8 +69,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
+  contentWrapper: {
+    flex: 0.2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  textWrapper: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   text: {
     fontSize: fonts.regular,
     fontWeight: fonts.thinnest
-  }
+  },
+  buttonWrapper: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

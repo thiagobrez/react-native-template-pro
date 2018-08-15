@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Button} from '../components';
-import {fonts} from '../styles';
+import {colors, fonts} from '../styles';
 import {
   View,
   Text,
@@ -16,10 +16,20 @@ export default class Tab4 extends Component {
     
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Tab4</Text>
-        <Button onPress={() => navigate('Overlay1')}>
-          Open Overlay1
-        </Button>
+        <View style={styles.contentWrapper}>
+          <View style={styles.textWrapper}>
+            <Text style={styles.text}>
+              Tab4
+            </Text>
+          </View>
+          <View style={styles.buttonWrapper}>
+            <Button text='Open Overlay1'
+                    textColor={colors.secondary}
+                    textWeight={fonts.boldest}
+                    color={colors.primary}
+                    onPress={() => navigate('Overlay1')}/>
+          </View>
+        </View>
       </View>
     );
     
@@ -35,8 +45,23 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   },
+  contentWrapper: {
+    flex: 0.2,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  textWrapper: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   text: {
     fontSize: fonts.regular,
     fontWeight: fonts.thinnest
-  }
+  },
+  buttonWrapper: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

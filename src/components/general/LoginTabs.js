@@ -22,7 +22,7 @@ export default class LoginTabs extends Component {
                             styles.tab,
                             {borderBottomColor: index ? colors.transparent : colors.lighter}]}>
           <Text style={styles.tabText}>
-            Entrar
+            Sign In
           </Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => navigate('SignUp')}
@@ -30,7 +30,7 @@ export default class LoginTabs extends Component {
                             styles.tab,
                             {borderBottomColor: index ? colors.lighter: colors.transparent}]}>
           <Text style={styles.tabText}>
-            Cadastrar
+            Sign Up
           </Text>
         </TouchableOpacity>
       </View>
