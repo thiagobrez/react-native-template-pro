@@ -42,7 +42,12 @@ const Button = ({
     [
       styles.button,
       styles[type],
-      {backgroundColor: disabled ? colors.light : styles[type] ? styles[type].backgroundColor : color}
+      {backgroundColor: disabled ?
+          colors.light :
+          styles[type]?.backgroundColor ?
+            styles[type].backgroundColor :
+            color
+      }
     ];
   
   return (
@@ -55,7 +60,7 @@ const Button = ({
           {text &&
           <Text style={[styles.text, {
             marginLeft: icon ? 5 : 0,
-            color: textColor || colors.lighter,
+            color: disabled ? colors.regular : textColor || colors.lighter,
             fontWeight: textWeight || fonts.normal
           }]}>
             {text}
@@ -109,6 +114,9 @@ const styles = StyleSheet.create({
   google: {
     backgroundColor: colors.google,
     borderColor: colors.google,
+    marginHorizontal: 5
+  },
+  multi: {
     marginHorizontal: 5
   },
   whiteOpacity: {
