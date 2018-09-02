@@ -19,7 +19,10 @@
     "react-navigation",
     "react-native-vector-icons",
     "realm",
-    "database"
+    "database",
+    "formik",
+    "yup",
+    "react-native-linear-gradient"
   ],
   "homepage": "https://github.com/thiagobrez/react-native-template-pro",
   "bugs": {
