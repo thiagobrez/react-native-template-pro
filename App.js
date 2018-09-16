@@ -36,6 +36,7 @@ export default class App extends Component {
       'createTabNavigator is deprecated',
       'You should only render one navigator explicitly',
       'Method `jumpToIndex` is deprecated.',
+      'Native TextInput'
     ]);
     
     //Erases database and async storage
