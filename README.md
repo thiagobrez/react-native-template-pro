@@ -46,7 +46,8 @@ A React Native template with a nice folder structure, navigation, database, asyn
 ---
 
 See [how to create and use](https://blog.jetbrains.com/webstorm/2018/01/using-and-creating-code-snippets/)
-* Stateful component
+
+* **comp** (stateful component)
 ```javascript
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
@@ -67,7 +68,7 @@ $ComponentName$.propTypes = {};
 const styles = StyleSheet.create({});
 ```
 
-* Stateful Redux component
+* **rcomp** (stateful redux component)
 ```javascript
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
@@ -77,38 +78,58 @@ import * as $storeProp$Actions from '../actions/$storeProp$';
 import {View, Text, StyleSheet} from 'react-native';
 
 class $ComponentName$ extends Component {
+  
   render() {
+    
     return (
       <View>
         <Text>$ComponentName$</Text>
         $END$
       </View>
     );
+    
   }
+  
 }
 
 $ComponentName$.propTypes = {
-  data: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array
-  ]),
-  error: PropTypes.boolean,
-  loading: PropTypes.boolean,
+  //TODO: data
+  error: PropTypes.shape({
+    $storeProp$: PropTypes.bool
+  }),
+  loading: PropTypes.shape({
+    $storeProp$: PropTypes.bool
+  }),
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+
+});
 
 const mapStateToProps = state => ({
-  data: state.$storeProp$.data,
-  error: state.$storeProp$.error,
-  loading: state.$storeProp$.loading
+  data: {
+    $storeProp$: state.$storeProp$.data
+  },
+  error: {
+    $storeProp$: state.$storeProp$.error
+  },
+  loading: {
+    $storeProp$: state.$storeProp$.loading
+  },
 });
-const mapDispatchToProps = dispatch => bindActionCreators($storeProp$Actions, dispatch);
+
+const mapDispatchToProps = dispatch => {
+  return {
+    actions: {
+      $storeProp$: bindActionCreators($storeProp$Actions, dispatch),
+    }
+  };
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)($ComponentName$);
 ```
 
-* Stateless component
+* **scomp** (stateless component)
 ```javascript
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -129,13 +150,25 @@ $ComponentName$.propTypes = {};
 export default $ComponentName$;
 ```
 
+* **con** (console.display)
+
+```javascript
+console.display('$var$', $var$);
+```
+
+* **tron** (console.tron)
+
+```javascript
+console.tron('$var$');
+```
+
 ### :pushpin: Roadmap
 
 ---
 
 - [x] Integrate mobile database
 - [ ] Fully integrate react-navigation to redux
-- [ ] Add more reusable components
+- [∞] Add more reusable components
 
 ### :warning: Known issues
 

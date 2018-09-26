@@ -11,7 +11,7 @@ import {StyleSheet, TouchableOpacity} from 'react-native';
  * StackNavigator header icon component. When pressed, redirects to a specific route. If the route
  * is an overlay, it isn't rendered.
  */
-class HeaderIcon extends Component {
+class DynamicHeaderIcon extends Component {
 	
 	state = {
 		icon: 'settings-outline'
@@ -47,7 +47,7 @@ class HeaderIcon extends Component {
 	}
 }
 
-HeaderIcon.propTypes = {
+DynamicHeaderIcon.propTypes = {
   data: PropTypes.string
 };
 
@@ -66,4 +66,4 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => bindActionCreators(navigationActions, dispatch);
 
-export default connect(mapStateToProps, mapDispatchToProps)(HeaderIcon);
+export default connect(mapStateToProps, mapDispatchToProps)(DynamicHeaderIcon);

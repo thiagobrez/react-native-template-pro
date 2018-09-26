@@ -2,7 +2,7 @@ import React from 'react';
 import {colors} from '../../styles';
 import {NavigatorMainTabs} from '../index';
 import {Overlay1} from '../../screens';
-import {HeaderIcon} from '../../components';
+import {DynamicHeaderIcon} from '../../components';
 import {createStackNavigator} from 'react-navigation';
 
 /**
@@ -20,16 +20,17 @@ export default RootNavigatorTabs = () => {
     Overlay1: {screen: Overlay1},
   }, {
     navigationOptions: ({navigation}) => ({
-      headerStyle: {
-        backgroundColor: colors.primary,
-        borderBottomWidth: 0,
-      },
-      headerTitleStyle: {
-        fontWeight: 'bold'
-      },
+      headerBackground: (
+        <LinearGradient style={{flex: 1}}
+                        colors={colors.regularGradient}
+                        start={{x: 0, y: 1}}
+                        end={{x: 1, y: 0}}/>
+      ),
+      headerStyle: {borderBottomWidth: 0},
+      headerTitleStyle: {fontWeight: 'bold'},
       headerBackTitle: null,
       headerTintColor: colors.secondary,
-      headerRight: <HeaderIcon navigation={navigation}/>
+      headerRight: <DynamicHeaderIcon navigation={navigation}/>
     })
   })
   
