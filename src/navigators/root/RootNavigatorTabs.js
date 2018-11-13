@@ -4,6 +4,7 @@ import {NavigatorMainTabs} from '../index';
 import {Overlay1} from '../../screens';
 import {DynamicHeaderIcon} from '../../components';
 import {createStackNavigator} from 'react-navigation';
+import LinearGradient from 'react-native-linear-gradient';
 
 /**
  * Root navigator.
